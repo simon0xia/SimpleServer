@@ -29,18 +29,101 @@
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="DataBase">
+      <UniqueIdentifier>{e0b43198-e521-482d-b02e-bab1c20c9f00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="comm">
+      <UniqueIdentifier>{c9229d8d-536d-49b0-b279-ef8cd2870e5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client">
+      <UniqueIdentifier>{8a23ebc4-50e2-4b66-97fc-7fc5fc273fc9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="precompile.cpp">
+    <ClCompile Include="..\comm\ConnectionPool.cpp">
+      <Filter>comm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\comm\precompile.cpp">
+      <Filter>comm</Filter>
+    </ClCompile>
+    <ClCompile Include="loginserver.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_loginserver.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_loginserver.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="mytcpserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mytcpserver.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mytcpserver.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_clientthread.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_clientthread.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_clientsocket.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_clientsocket.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_clientmanager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_clientmanager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="clientmanager.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="clientsocket.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="clientthread.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\comm\quotoLog.cpp">
+      <Filter>comm</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="precompile.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\comm\ConnectionPool.h">
+      <Filter>comm</Filter>
     </ClInclude>
+    <ClInclude Include="..\comm\precompile.h">
+      <Filter>comm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\comm\quotoLog.h">
+      <Filter>comm</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="loginserver.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mytcpserver.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="clientmanager.h">
+      <Filter>Client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="clientsocket.h">
+      <Filter>Client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="clientthread.h">
+      <Filter>Client</Filter>
+    </CustomBuild>
   </ItemGroup>
 </Project>
